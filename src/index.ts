@@ -1,13 +1,4 @@
-import {
-  clientCode,
-  ConcreteFactory1,
-  ConcreteFactory2,
-} from './creational/abstract-factory';
+import { clientCode, Director } from './creational/builder';
 
-console.log('Client: Testing client code with the first factory type...');
-clientCode(new ConcreteFactory1());
-
-console.log(
-  'Client: Testing the same client code with the second factory type...'
-);
-clientCode(new ConcreteFactory2());
+const director = new Director();
+clientCode(director);
