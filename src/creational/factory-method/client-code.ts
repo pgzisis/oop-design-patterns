@@ -1,4 +1,4 @@
-import { Creator } from './';
+import { Creator, ConcreteCreator1, ConcreteCreator2 } from './';
 
 export function clientCode(creator: Creator) {
   console.log(
@@ -6,3 +6,9 @@ export function clientCode(creator: Creator) {
   );
   console.log(creator.someOperation());
 }
+
+console.log('App: Launched with the ConcreteCreator1\n');
+clientCode(new ConcreteCreator1());
+
+console.log('App: Launched with the ConcreteCreator2\n');
+clientCode(new ConcreteCreator2());
