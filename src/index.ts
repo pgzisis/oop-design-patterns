@@ -1,3 +1,3 @@
-import { clientCode } from './creational/prototype';
+import { clientCode } from './creational/singleton';
 
 clientCode();
