@@ -1,15 +1,11 @@
 import {
-  ConcreteComponent,
+  Subsystem1,
+  Subsystem2,
+  Facade,
   clientCode,
-  ConcreteDecoratorA,
-  ConcreteDecoratorB,
-} from './structural/decorator';
+} from './structural/facade';
 
-const simple = new ConcreteComponent();
-console.log("Client: I've got a simple component");
-clientCode(simple);
-
-const decorator1 = new ConcreteDecoratorA(simple);
-const decorator2 = new ConcreteDecoratorB(decorator1);
-console.log("Client: Now I've got a decorated component:");
-clientCode(decorator2);
+const subsystem1 = new Subsystem1();
+const subsystem2 = new Subsystem2();
+const facade = new Facade(subsystem1, subsystem2);
+clientCode(facade);
