@@ -10,3 +10,4 @@ export function clientCode() {
     console.log('Singleton failed, variables contain different isntances');
   }
 }
+clientCode();
