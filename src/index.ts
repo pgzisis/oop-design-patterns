@@ -1,8 +1,9 @@
-import { addCarToPoliceDatabase, factory } from './structural/flyweight';
+import { RealSubject, clientCode, ProxyClass } from './structural/proxy';
 
-factory.listFlyweights();
+console.log('Client: Executing the client code with a real subject');
+const realSubject = new RealSubject();
+clientCode(realSubject);
 
-addCarToPoliceDatabase(factory, 'CL234IR', 'James Doe', 'BMW', 'M5', 'red');
-addCarToPoliceDatabase(factory, 'CL234IR', 'James Doe', 'BMW', 'X1', 'red');
-
-factory.listFlyweights();
+console.log('Client: Executing the same client code with a proxy:');
+const proxy = new ProxyClass(realSubject);
+clientCode(proxy);

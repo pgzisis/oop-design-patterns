@@ -8,6 +8,8 @@ export const factory = new FlyweightFactory([
   ['BMW', 'X5', 'white'],
 ]);
 
+factory.listFlyweights();
+
 export function addCarToPoliceDatabase(
   ff: FlyweightFactory,
   plates: string,
@@ -21,3 +23,8 @@ export function addCarToPoliceDatabase(
 
   flyweight.operation([plates, owner]);
 }
+
+addCarToPoliceDatabase(factory, 'CL234IR', 'James Doe', 'BMW', 'M5', 'red');
+addCarToPoliceDatabase(factory, 'CL234IR', 'James Doe', 'BMW', 'X1', 'red');
+
+factory.listFlyweights();
