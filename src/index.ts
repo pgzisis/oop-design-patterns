@@ -1,11 +1,8 @@
-import {
-  Subsystem1,
-  Subsystem2,
-  Facade,
-  clientCode,
-} from './structural/facade';
+import { addCarToPoliceDatabase, factory } from './structural/flyweight';
 
-const subsystem1 = new Subsystem1();
-const subsystem2 = new Subsystem2();
-const facade = new Facade(subsystem1, subsystem2);
-clientCode(facade);
+factory.listFlyweights();
+
+addCarToPoliceDatabase(factory, 'CL234IR', 'James Doe', 'BMW', 'M5', 'red');
+addCarToPoliceDatabase(factory, 'CL234IR', 'James Doe', 'BMW', 'X1', 'red');
+
+factory.listFlyweights();
