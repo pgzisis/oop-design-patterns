@@ -1,4 +1,4 @@
-import { WordsCollection } from './iterator';
+import { WordsCollection } from './';
 
 const collection = new WordsCollection();
 collection.addItem('First');
