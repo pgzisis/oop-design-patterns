@@ -1,4 +1,4 @@
-import { WordsCollection } from './behavioral/iterator';
+import { WordsCollection } from './iterator';
 
 const collection = new WordsCollection();
 collection.addItem('First');
