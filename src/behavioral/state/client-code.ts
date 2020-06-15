@@ -1,4 +1,4 @@
-import { Context, ConcreteStateA } from './behavioral/state';
+import { Context, ConcreteStateA } from './state';
 
 const context = new Context(new ConcreteStateA());
 context.request1();
