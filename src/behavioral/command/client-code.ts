@@ -1,9 +1,4 @@
-import {
-  Invoker,
-  SimpleCommand,
-  Receiver,
-  ComplexCommand,
-} from './behavioral/command/command';
+import { Invoker, SimpleCommand, Receiver, ComplexCommand } from './command';
 
 const invoker = new Invoker();
 invoker.setOnStart(new SimpleCommand('Say Hi!'));
