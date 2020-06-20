@@ -1,8 +1,4 @@
-import {
-  Context,
-  ConcreteStrategyA,
-  ConcreteStrategyB,
-} from './behavioral/strategy/strategy';
+import { Context, ConcreteStrategyA, ConcreteStrategyB } from './strategy';
 
 const context = new Context(new ConcreteStrategyA());
 console.log('Client: Strategy is set to normal sorting');
