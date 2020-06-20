@@ -5,7 +5,7 @@ import {
   ConcreteComponentB,
   ConcreteVisitor1,
   ConcreteVisitor2,
-} from './behavioral/visitor/visitor';
+} from './visitor';
 
 function clientCode(components: Component[], visitor: Visitor) {
   for (const component of components) {
