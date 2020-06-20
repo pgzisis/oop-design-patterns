@@ -1,4 +1,4 @@
-import { Component1, Component2 } from './behavioral/mediator/mediator';
+import { Component1, Component2 } from './mediator';
 
 const c1 = new Component1();
 const c2 = new Component2();
