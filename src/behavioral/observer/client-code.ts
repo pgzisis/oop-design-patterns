@@ -2,7 +2,7 @@ import {
   ConcreteSubject,
   ConcreteObserverA,
   ConcreteObserverB,
-} from './behavioral/observer/observer';
+} from './observer';
 
 const subject = new ConcreteSubject();
 
