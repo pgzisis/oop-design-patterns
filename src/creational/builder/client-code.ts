@@ -1,4 +1,4 @@
-import { Director, ConcreteBuilder1 } from './';
+import { Director, ConcreteBuilder1 } from './builder';
 
 export function clientCode(director: Director) {
   const builder = new ConcreteBuilder1();

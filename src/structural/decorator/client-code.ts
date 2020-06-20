@@ -3,7 +3,7 @@ import {
   ConcreteComponent,
   ConcreteDecoratorA,
   ConcreteDecoratorB,
-} from './';
+} from './decorator';
 
 export function clientCode(component: Component) {
   console.log(`RESULT: ${component.operation()}`);

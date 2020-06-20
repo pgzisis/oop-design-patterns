@@ -1,4 +1,4 @@
-import { Creator, ConcreteCreator1, ConcreteCreator2 } from './';
+import { Creator, ConcreteCreator1, ConcreteCreator2 } from './factory-method';
 
 export function clientCode(creator: Creator) {
   console.log(

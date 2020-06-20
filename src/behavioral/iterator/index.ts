@@ -1,1 +1,0 @@
-export { WordsCollection } from './iterator';

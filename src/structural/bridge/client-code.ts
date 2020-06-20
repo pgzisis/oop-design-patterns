@@ -3,7 +3,7 @@ import {
   ConcreteImplementationA,
   ConcreteImplementationB,
   ExtendedAbstraction,
-} from './';
+} from './bridge';
 
 export function clientCode(abstraction: Abstraction) {
   console.log(abstraction.operation());

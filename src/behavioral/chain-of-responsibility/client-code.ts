@@ -1,4 +1,9 @@
-import { Handler, MonkeyHandler, SquirrelHandler, DogHandler } from './';
+import {
+  Handler,
+  MonkeyHandler,
+  SquirrelHandler,
+  DogHandler,
+} from './chain-of-responsibility';
 
 export function clientCode(handler: Handler) {
   const foods = ['Nut', 'Banana', 'Cup of coffee'];

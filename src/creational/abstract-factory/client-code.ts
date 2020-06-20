@@ -1,4 +1,8 @@
-import { AbstractFactory, ConcreteFactory1, ConcreteFactory2 } from './';
+import {
+  AbstractFactory,
+  ConcreteFactory1,
+  ConcreteFactory2,
+} from './abstract-factory';
 
 export function clientCode(factory: AbstractFactory) {
   const productA = factory.createProductA();

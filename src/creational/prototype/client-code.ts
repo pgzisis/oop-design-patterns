@@ -1,4 +1,4 @@
-import { Prototype, ComponentWithBackReference } from './';
+import { Prototype, ComponentWithBackReference } from './prototype';
 
 export function clientCode() {
   const p1 = new Prototype();

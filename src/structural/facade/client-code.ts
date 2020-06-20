@@ -1,4 +1,4 @@
-import { Facade, Subsystem1, Subsystem2 } from './';
+import { Facade, Subsystem1, Subsystem2 } from './facade';
 
 export function clientCode(facade: Facade) {
   console.log(facade.operation());

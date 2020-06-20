@@ -1,4 +1,4 @@
-import { Originator, Caretaker } from './';
+import { Originator, Caretaker } from './memento';
 
 const originator = new Originator('Super-duper-super-puper-super');
 const caretaker = new Caretaker(originator);

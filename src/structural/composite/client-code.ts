@@ -1,4 +1,4 @@
-import { Component, Leaf, Composite } from './';
+import { Component, Leaf, Composite } from './composite';
 
 export function clientCode(component: Component) {
   console.log(`RESULT: ${component.operation()}`);

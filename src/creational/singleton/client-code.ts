@@ -1,4 +1,4 @@
-import { Singleton } from './';
+import { Singleton } from './singleton';
 
 export function clientCode() {
   const s1 = Singleton.getInstance();
